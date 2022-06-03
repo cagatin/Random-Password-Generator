@@ -49,13 +49,15 @@ function generatePassword() {
   if (allowCapitals) {
     charString = charString.concat(capitalChars);
   }
+  // if allowLowercase is true, add lowercaseChars to the charString.
   if (allowLowercase) {
     charString = charString.concat(lowercaseChars);
   }
 
+  // Checks if the user rejected every available character type. If so, alerts the user to select at least one character type.
   if (charString == "") {
     alert("No character types selected. Please Select at least one character type to generate your password.");
-    return;
+    return "Please Select at least one character type to generate your password.";
   }
 
   // password to be returned by the function.
