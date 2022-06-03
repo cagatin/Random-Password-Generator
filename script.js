@@ -17,9 +17,17 @@ function generatePassword() {
   // prompt the user for the desired length of the password.
   let passLength = prompt("Please enter the desired length of your password. (Between 8 and 128)");
 
+  // prompt the user to allow lowercase characters
+  let allowSpecial = confirm("Allow password to contain special characters?");
+
+
   // string variable containing all possible characters to choose from.
-  let charString = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  let specialString = "~!@#$%^&*()-=_+[]{}:;,./?|";
+  let charString = "~!@#$%^&*()-=_+[]{}:;,./?|0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  // let specialString = "~!@#$%^&*()-=_+[]{}:;,./?|";
+
+  if (!allowSpecial) {
+    charString = charString.substring(27, charString.length);
+  }
 
   // password to be returned by the function.
   let result = "";
