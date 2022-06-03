@@ -25,6 +25,12 @@ function generatePassword() {
   // prompt the user for the desired length of the password.
   let passLength = prompt("Please enter the desired length of your password. (Between 8 and 128)");
 
+  // Checks to see if the password length is within the applicable range.
+  if (passLength < 8 || passLength > 128) {
+    alert("Please select a password length value between 8 and 128");
+    return "Please reenter a password length between 8 and 128";
+  }
+
   // prompt the user to allow special character values.
   let allowSpecial = confirm("Allow password to contain special character values?");
 
