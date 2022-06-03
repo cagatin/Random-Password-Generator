@@ -14,19 +14,23 @@ generateBtn.addEventListener("click", writePassword);
 
 // Function used to generate a password.
 function generatePassword() {
+  // string variable containing all possible characters to choose from.
+  let charString = "~!@#$%^&*()-=_+[]{}:;,./?|0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
   // prompt the user for the desired length of the password.
   let passLength = prompt("Please enter the desired length of your password. (Between 8 and 128)");
 
   // prompt the user to allow lowercase characters
-  let allowSpecial = confirm("Allow password to contain special characters?");
+  let allowSpecial = confirm("Allow password to contain special character values?");
 
+  // prompt the user to allow numbers
+  let allowNumbers = confirm("Allow password to contain number values?");
 
-  // string variable containing all possible characters to choose from.
-  let charString = "~!@#$%^&*()-=_+[]{}:;,./?|0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  // let specialString = "~!@#$%^&*()-=_+[]{}:;,./?|";
-
+  // if the allowSpecial variable contains a false boolean value, then remove the special characters from the charString. 
   if (!allowSpecial) {
     charString = charString.substring(27, charString.length);
+  } else if (!allowNumbers) {
+    charString = charString.substring(10, charString.length);
   }
 
   // password to be returned by the function.
