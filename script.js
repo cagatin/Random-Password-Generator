@@ -22,4 +22,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   // prompt the user for the desired length of the password.
   let passLength = prompt("Please enter the desired length of your password. (Between 8 and 128)");
+
+  // string variable containing all possible characters to choose from.
+  let charString = "0123456789~!@#$%^&*()-=_+[]{}:;,./?|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 }
