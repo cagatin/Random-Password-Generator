@@ -17,7 +17,7 @@ function generatePassword() {
   // string variable containing all possible characters to choose from.
   let charString = "";
 
-  let specialChars = "~!@#$%^&*()-=_+[]{}:;,./?|";
+  let specialChars = "\'\"~!@#$%^&*()-=_+[]{}:;,./?|";
   let numberChars = "0123456789";
   let capitalChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
