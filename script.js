@@ -46,7 +46,7 @@ function generatePassword() {
   // prompt to allow capital letters.
   let allowCapitals = confirm("Allow password to contain capital letters?");
 
-  // prompt to allow lowercase eltters
+  // prompt to allow lowercase letters.
   let allowLowercase = confirm("allow password to contian lowercase letters?");
 
   // If the allowSpecial is true, add specialChars to the charString.
@@ -98,6 +98,7 @@ function checkString(str) {
       return false;
     }
   }
+
   // All characters in the string are number values. Thus, return true.
   return true;
 }
