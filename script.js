@@ -74,6 +74,5 @@ function generatePassword() {
     let charIndex = Math.floor(Math.random() * charString.length);
     result += charString.charAt(charIndex);
   }
-  console.log(result);
   return result;
 }
