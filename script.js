@@ -25,11 +25,8 @@ function generatePassword() {
   // prompt the user for the desired length of the password.
   let passLength = prompt("Please enter the desired length of your password. (Between 8 and 128)");
 
-  // convert passLength into a string. Catches possible typos. 
-  passLength = parseInt(passLength);
-
-  // After converting passLength into a number, check to see if passLength is not a number. If so, reject the password.
-  if (isNaN(passLength)) {
+  // Check to see if the passLength value is a valid Number.
+  if (!checkString(passLength)) {
     alert("Only numerical values are allowed for the desired password length");
     return "Please reenter a password length between 8 and 128";
   }
@@ -83,5 +80,24 @@ function generatePassword() {
     let charIndex = Math.floor(Math.random() * charString.length);
     result += charString.charAt(charIndex);
   }
+
   return result;
+}
+
+// Function to check if a string only contains number values.
+function checkString(str) {
+  // length of the string
+  let len = str.length;
+
+  // for loop to iterate through the str argument passed in.
+  for (let i = 0; i < len; i++) {
+    // selecting a character in the str string. 
+    let cmp = parseInt(str.charAt(i));  //convert the character to a Number using parseInt().
+    // if the character is NOT a number, then reject the entire string.
+    if (isNaN(cmp)) {
+      return false;
+    }
+  }
+  // All characters in the string are number values. Thus, return true.
+  return true;
 }
