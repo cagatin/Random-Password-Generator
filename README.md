@@ -8,3 +8,5 @@ The user can select the following choices to include into their randomly generat
     - the addition of number values (e.g. 1234). <br />
     - the addition of uppercase characters (e.g. ABCD). <br />
     - the addition of lowercase characters (e.g. abcd). <br />
+
+## How are the random passwords Generated?
