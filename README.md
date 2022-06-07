@@ -37,3 +37,6 @@ The addition of uppercase character values:
 
 The addition of lowercase character values:
 ![](assets/images/lowercaseChar.PNG)
+
+#### Finally, a generated password will be displayed within the text area:
+![](assets/images/generatedPass.PNG)
