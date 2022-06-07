@@ -1,5 +1,5 @@
 # Random-Password-Generator
-![](assets/images/fullApp.PNG);
+![](assets/images/fullApp.PNG)
 Welcome to my [Random Password Generator!](https://cagatin.github.io/Random-Password-Generator)
 
 ## What does this do?
