@@ -15,16 +15,25 @@ Random passwords are generated based on the criteria selected by the user. Given
 The password is then created through random number generation, where an index value is chosen at random, then selected from a string contianing all possible character values. 
 
 #### First, the user is asked the desired length of the password:
-![](assets/images/length.PNG);
+![](assets/images/length.PNG)
 
 The selected password length *must* fall within a range between 8 and 128 characters. If the user selects a number value not within this range, an alert will be given to the user suggesting a proper password length.
 
-![](assets/images/lengthRangeFail.PNG);
+![](assets/images/lengthRangeFail.PNG)
 
 If the user input contians any non-numbers, an alert will be given to the user suggesting to use only numberical values for the password length.
 
-![](assets/images/lengthCharFail.PNG);
+![](assets/images/lengthCharFail.PNG)
 
 #### Then, the user is given the following prompts to select the criteria for their password:
 The addition of special character values:
-![](assets/images/specialChar.PNG);
+![](assets/images/specialChar.PNG)
+
+The addition of numerical values:
+![](assets/images/numberChar.PNG)
+
+The addition of uppercase character values:
+![](assets/images/uppercaseChar.PNG)
+
+The addition of lowercase character values:
+![](assets/images/lowercaseChar.PNG)
