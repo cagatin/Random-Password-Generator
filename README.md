@@ -9,4 +9,8 @@ The user can select the following choices to include into their randomly generat
     - the addition of uppercase characters (e.g. ABCD). <br />
     - the addition of lowercase characters (e.g. abcd). <br />
 
-## How are the random passwords Generated?
+### How are the random passwords Generated?
+Random passwords are generated based on the characteers selected by the user. 
+
+#### First, the user is asked the desired length of the password
+![](assets/images/length.PNG);
