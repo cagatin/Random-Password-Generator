@@ -92,9 +92,9 @@ function checkString(str) {
   // for loop to iterate through the str argument passed in.
   for (let i = 0; i < len; i++) {
     // selecting a character in the str string. 
-    let cmp = parseInt(str.charAt(i));  //convert the character to a Number using parseInt().
+    let char = parseInt(str.charAt(i));  //convert the character to a Number using parseInt().
     // if the character is NOT a number, then reject the entire string.
-    if (isNaN(cmp)) {
+    if (isNaN(char)) {
       return false;
     }
   }
