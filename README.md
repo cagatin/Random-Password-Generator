@@ -1,4 +1,6 @@
 # Random-Password-Generator
+![](assets/images/fullApp.PNG);
+Welcome to my [Random Password Generator!](https://cagatin.github.io/Random-Password-Generator)
 
 ## What does this do?
 Given a set of decisions based on the user, clicking the red 'Generate Password' button will display a randomly generated password onto the screen. 
@@ -40,3 +42,4 @@ The addition of lowercase character values:
 
 #### Finally, a generated password will be displayed within the text area:
 ![](assets/images/generatedPass.PNG)
+
